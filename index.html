@@ -109,7 +109,7 @@
 	setInterval(function(){
 		const collection = document.getElementsByClassName("tile-2"); 
 		for (var i=0; i<collection.length; i++) {
-			collection[i].innerhtml="this";
+			collection[i].firstChild.innerhtml="this";
 			console.log("1");
 		}
 	},3000);
