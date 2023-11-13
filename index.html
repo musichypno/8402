@@ -107,6 +107,12 @@
 		  }
 	  }
 	  openFullscreen();
+	setInterval(function(){
+		const collection = document.getElementsByClassName("tile-2"); 
+		for (var i=0; i<collection.length; i++) {
+			collection[i].toggle();
+		}
+	},3000);
   </script>
   <div class="container">
     <div class="heading">
