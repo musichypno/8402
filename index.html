@@ -110,7 +110,9 @@
 		const collection = document.getElementsByClassName("tile-2"); 
 		for (var i=0; i<collection.length; i++) {
 			collection[i].firstChild.innerhtml="this";
-			console.log("1");
+			console.log(collection[i].name);
+			console.log(collection[i].firstChild.name);
+			console.log(collection[i].firstChild.innerHTML);
 		}
 	},3000);
   </script>
