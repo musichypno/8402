@@ -95,18 +95,17 @@
 <body>
   <script>
     var flashingText     = [
-    [2, ["This","IS","TWO"]],
-    [4, ["This","IS","FOUR"]],
-    [8, ["This","IS","EIGHT"]],
-    [16, ["This","IS","16"]],
-    [32, ["This","IS","32"]],
-    [64, ["This","IS","64"]],
-    [128, ["This","IS","128"]],
-    [256, ["This","IS","256"]],
-    [512, ["This","IS","512"]],
-    [1024, ["This","IS","1024"]],
-    [2048, ["This","IS","2048"]]
-];
+    ["This","IS","TWO"],
+    ["This","IS","FOUR"],
+    ["This","IS","EIGHT"],
+    ["This","IS","16"],
+    ["This","IS","32"],
+    ["This","IS","64"],
+    ["This","IS","128"],
+    ["This","IS","256"],
+    ["This","IS","512"],
+    ["This","IS","1024"],
+    ["This","IS","2048"]];
 	  var position = 0;
 	  document.body.style.zoom = "200%";
 	  var elem = document.documentElement;
@@ -124,7 +123,7 @@
 		
 		const collection = document.getElementsByClassName("tile-2"); 
 		for (var i=0; i<collection.length; i++) {
-			collection[i].firstChild.innerHTML= flashingText[0][0][position];
+			collection[i].firstChild.innerHTML= flashingText[0][position];
 			console.log(collection[i].name);
 			console.log(collection[i].firstChild.name);
 			console.log(collection[i].firstChild.innerHTML);
