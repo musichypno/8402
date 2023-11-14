@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #ec7bdf;
+  background: #f1b5d1;
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
@@ -150,6 +150,7 @@ hr {
   -ms-touch-action: none;
   touch-action: none;
   background: #c57a92;
+  background-color: #c57a92;
   border-radius: 6px;
   width: 500px;
   height: 500px;
