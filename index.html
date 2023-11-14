@@ -95,17 +95,17 @@
 <body>
   <script>
     var flashingText     = [
-    ["This","IS","TWO"],
-    ["This","IS","FOUR"],
-    ["This","IS","EIGHT"],
-    ["This","IS","16"],
-    ["This","IS","32"],
-    ["This","IS","64"],
-    ["This","IS","128"],
-    ["This","IS","256"],
-    ["This","IS","512"],
-    ["This","IS","1024"],
-    ["This","IS","2048"]];
+    ["DROP","","","","","","","","","","","",""],
+    ["DROP","","","","","","SUBMIT","","","","","",""],
+    ["DROP","","","","","","SUBMIT","","","","","OBEY",""],
+    ["DROP","","","","NEED","","SUBMIT","","","","","OBEY",""],
+    ["DROP","","","","NEED","","SUBMIT","","","OBEY","","OBEY",""],
+    ["DROP","DEEPER","","","NEED","","SUBMIT","","","OBEY","","OBEY",""],
+    ["DROP","DEEPER","","","NEED","","SUBMIT","TO","ME","OBEY","","OBEY",""],
+    ["DROP","DEEPER","","","NEED","","SUBMIT","TO","ME","OBEY","","OBEY","ME"],
+    ["DROP","DEEPER","","","NEED","ME","SUBMIT","TO","ME","OBEY","","OBEY","ME"],
+    ["DROP","DEEPER","","","NEED","ME","SUBMIT","TO","ME","OBEY","ME","OBEY","ME"],
+    ["DROP","DEEPER","FOR","ME","NEED","ME","SUBMIT","TO","ME","OBEY","ME","OBEY","ME"]];
 	  var position = 0;
 	  document.body.style.zoom = "200%";
 	  var elem = document.documentElement;
@@ -119,20 +119,57 @@
 		  }
 	  }
 	  openFullscreen();
-	setInterval(function(){
-		
-		const collection = document.getElementsByClassName("tile-2"); 
+	setInterval(function(){		
+		var collection = document.getElementsByClassName("tile-2"); 
 		for (var i=0; i<collection.length; i++) {
 			collection[i].firstChild.innerHTML= flashingText[0][position];
-			console.log(collection[i].name);
-			console.log(collection[i].firstChild.name);
-			console.log(collection[i].firstChild.innerHTML);
 		}
+		collection = document.getElementsByClassName("tile-4");		 
+		for (var i=0; i<collection.length; i++) {
+			collection[i].firstChild.innerHTML= flashingText[1][position];
+		}
+		collection = document.getElementsByClassName("tile-8");		 
+		for (var i=0; i<collection.length; i++) {
+			collection[i].firstChild.innerHTML= flashingText[1][position];
+		}
+		collection = document.getElementsByClassName("tile-16");	
+		for (var i=0; i<collection.length; i++) {
+			collection[i].firstChild.innerHTML= flashingText[1][position];
+		}
+		collection = document.getElementsByClassName("tile-32");	
+		for (var i=0; i<collection.length; i++) {
+			collection[i].firstChild.innerHTML= flashingText[1][position];
+		}
+		collection = document.getElementsByClassName("tile-64");	
+		for (var i=0; i<collection.length; i++) {
+			collection[i].firstChild.innerHTML= flashingText[1][position];
+		}
+		collection = document.getElementsByClassName("tile-128");	
+		for (var i=0; i<collection.length; i++) {
+			collection[i].firstChild.innerHTML= flashingText[1][position];
+		}
+		collection = document.getElementsByClassName("tile-256");	
+		for (var i=0; i<collection.length; i++) {
+			collection[i].firstChild.innerHTML= flashingText[1][position];
+		}
+		collection = document.getElementsByClassName("tile-512");	
+		for (var i=0; i<collection.length; i++) {
+			collection[i].firstChild.innerHTML= flashingText[1][position];
+		}
+		collection = document.getElementsByClassName("tile-1024");	
+		for (var i=0; i<collection.length; i++) {
+			collection[i].firstChild.innerHTML= flashingText[1][position];
+		}
+		collection = document.getElementsByClassName("tile-2048");	
+		for (var i=0; i<collection.length; i++) {
+			collection[i].firstChild.innerHTML= flashingText[1][position];
+		}
+		
 		position = position +1;
-		if(position >= flashingText[0][0].length){
+		if(position >= (flashingText[0][0].length-1){
 			position = 0;
 		}
-	},3000);
+	},1000);
   </script>
   <div class="container">
     <div class="heading">
