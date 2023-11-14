@@ -139,6 +139,7 @@ hr {
     opacity: 1; } }
 .game-container {
   margin-top: 40px;
+  background-image: url('https://raw.githubusercontent.com/musichypno/8402/main/style/bdsmlr-680562-T7MbmCk0bs.gif') !important;
   position: relative;
   padding: 15px;
   cursor: default;
